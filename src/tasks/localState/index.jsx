@@ -10,7 +10,9 @@ const localStateTasks = [
   },
   {
     id: 2,
-    text: "Connect the input to the argument passed to useFetch so that it is `/posts?userId=${searchVal}` when the search value is not empty and only '/posts' if it is.",
+    text: `Connect the input to the argument passed to useFetch so that it is
+        '/posts?userId=searchVal' when the search value is not empty and only
+        '/posts' if it is.`,
   },
   {
     id: 3,
@@ -30,7 +32,7 @@ const LocalStateExample = () => {
             error correctly.`,
         ]}
       />
-      <TaskList tasks={localStateTasks} />
+      <TaskList tasks={localStateTasks} storageKey="localStateTasks" />
       <PostSearch />
     </React.Fragment>
   );

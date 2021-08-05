@@ -4,7 +4,6 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import LiftedStateExample from "./tasks/liftedState";
 import LocalStateExample from "./tasks/localState";
-import LocalState from "./examples/localState";
 import WebStorageExample from "./tasks/webStorage";
 
 function App() {

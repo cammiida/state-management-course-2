@@ -30,7 +30,7 @@ const TaskList = ({ tasks, storageKey }) => {
 
   return (
     <div>
-      <h2>Tasks</h2>
+      <h3>Tasks</h3>
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         {tasksWithCheck.map((task) => (
           <div key={task.id}>

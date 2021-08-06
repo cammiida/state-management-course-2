@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import NoComponentComposition from "./examples/NoComponentComposition";
 import LiftedStateExample from "./tasks/liftedState";
 import LocalStateExample from "./tasks/localState";
 import WebStorageExample from "./tasks/webStorage";
@@ -40,6 +41,7 @@ function App() {
             <Route path="/">
               <div style={{ maxWidth: "500px" }}>
                 <h1>Home</h1>
+                <NoComponentComposition />
                 <p>
                   Welcome to this course. The different pages you see in the
                   navigation bar are different tasks that you can try. It is

@@ -1,7 +1,9 @@
 const localStateTasks = [
   {
     id: 1,
-    text: "Create a state using useState in the PostSearch component. Add an input element in the return and connect its value to this state.",
+    text: `Create a state using useState in the PostSearch component. Add an input element in the return and connect its 
+    value to this state. Set the onChange property on the input element to a function that sets the state to 
+    e.currentTarget.value`,
   },
   {
     id: 2,

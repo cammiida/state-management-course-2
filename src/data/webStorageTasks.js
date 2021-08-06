@@ -19,7 +19,7 @@ const webStorageTasks = [
   {
     id: 3,
     text: `
-        In the same component, create an onTaskToggle method that takes the id
+        In the same component, create a 'handleTaskToggle' method that takes the id
         of a task as input. Add the method to the onChange event on the checkbox
         input. Inside the method, use the setState method for the state defined
         above, find the task with that id and update it to the opposite of the

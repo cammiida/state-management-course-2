@@ -2,7 +2,8 @@ const liftedStateTasks = [
   {
     id: 1,
     text: `In the parent component rendered below, add the search function 
-          (copy paste from the PostSearch component).`,
+          (copy paste from the PostSearch component. You will need the state, 
+            useFetch and the input element).`,
   },
   {
     id: 2,

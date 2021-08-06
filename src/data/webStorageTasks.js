@@ -32,8 +32,8 @@ const webStorageTasks = [
         Great, we have successfully saved the tasks with checked status to
         localstorage (check the application tab in the developer tools). Now we
         just need to remember these previously saved tasks when mounting the
-        component. To do this, we will add an initialize method that we call
-        inside the initialization of the state. In this method we want to check
+        component. To do this, we will add an initialize method and call it
+        inside the initialization of the state. In the implementation of this method, we want to check
         whether there is any data in localstorage. If there is, use that, and if
         not, return the mapping of the incoming tasks as before.
 

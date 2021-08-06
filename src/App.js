@@ -43,9 +43,9 @@ function App() {
                 <p>
                   Welcome to this course. The different pages you see in the
                   navigation bar are different tasks that you can try. It is
-                  suggested that you do the first section first, because you
-                  might need that code later, then move on to the other ones as
-                  you like. Don't forget to ask if anything is unclear!{" "}
+                  suggested that you do the local state section first, because
+                  you might need that code for the lifted state section. Don't
+                  forget to ask if anything is unclear!{" "}
                   <span role="img" aria-label="hugging emoji">
                     🤗
                   </span>

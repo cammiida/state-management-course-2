@@ -1,6 +1,11 @@
 import React from "react";
 
-const TaskDescription = ({ title, sections }) => {
+type TaskDescriptionState = {
+  title: string;
+  sections: string[];
+};
+
+const TaskDescription = ({ title, sections }: TaskDescriptionState) => {
   return (
     <div>
       <h1>{title}</h1>

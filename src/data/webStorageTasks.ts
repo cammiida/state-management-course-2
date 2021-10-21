@@ -1,4 +1,6 @@
-const webStorageTasks = [
+import { Task } from "../types";
+
+const webStorageTasks: Task[] = [
   {
     id: 1,
     text: `
@@ -48,7 +50,7 @@ const webStorageTasks = [
       `,
   },
   {
-    id: 5,
+    id: 6,
     text: `
        One last thing: Because TasksList is being used by several components, the localStorage key "tasks" 
        will crash, and wrong tasks will be loaded. We should therefore also supply the localStorage key 

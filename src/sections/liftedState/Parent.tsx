@@ -5,7 +5,7 @@ import PostList from "./PostList";
 import PostSearchSummary from "./PostSearchSummary";
 
 const Parent = () => {
-  const [searchVal, setSearchVal] = useState();
+  const [searchVal, setSearchVal] = useState<string>();
 
   const {
     data: posts,

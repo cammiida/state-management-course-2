@@ -22,7 +22,7 @@ const ComponentComposition = () => {
   );
 };
 
-const CardComponent = ({ children }) => {
+const CardComponent: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   return (
     <div
       style={{
@@ -36,11 +36,14 @@ const CardComponent = ({ children }) => {
   );
 };
 
-const CardHeader = ({ title }) => {
+const CardHeader = ({ title }: { title: string }) => {
   return <h2>{title}</h2>;
 };
 
-const CardContent = ({ text, children }) => {
+const CardContent: React.FC<React.PropsWithChildren<{ text: string }>> = ({
+  text,
+  children,
+}) => {
   return (
     <section>
       <p>{text}</p>

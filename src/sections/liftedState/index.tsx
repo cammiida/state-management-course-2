@@ -6,7 +6,7 @@ import TaskDescription from "../../components/TaskDescription";
 
 const LiftedStateExample = () => {
   return (
-    <React.Fragment>
+    <>
       <TaskDescription
         title="Lifted state"
         sections={[
@@ -18,7 +18,7 @@ const LiftedStateExample = () => {
       />
       <TaskList tasks={liftedStateTasks} storageKey="liftedStateTasks" />
       <Parent />
-    </React.Fragment>
+    </>
   );
 };
 

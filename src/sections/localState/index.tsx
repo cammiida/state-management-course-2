@@ -6,7 +6,7 @@ import PostSearch from "./PostSearch";
 
 const LocalStateExample = () => {
   return (
-    <React.Fragment>
+    <>
       <TaskDescription
         title="Local state"
         sections={[
@@ -18,7 +18,7 @@ const LocalStateExample = () => {
       />
       <TaskList tasks={localStateTasks} storageKey="localStateTasks" />
       <PostSearch />
-    </React.Fragment>
+    </>
   );
 };
 

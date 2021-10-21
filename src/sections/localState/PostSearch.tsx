@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import useFetch from "../../hooks/useFetch";
+import { Post } from "../../types";
 
 const PostSearch = () => {
   const [searchVal, setSearchVal] = useState();
@@ -20,7 +21,7 @@ const PostSearch = () => {
       );
     }
     if (posts && posts.length) {
-      return posts.map((post) => (
+      return posts.map((post: Post) => (
         <div
           style={{
             border: "1px solid #DDD",
@@ -40,12 +41,7 @@ const PostSearch = () => {
   };
 
   return (
-    <React.Fragment>
-      {" "}
-      <input
-        value={searchVal}
-        onChange={(e) => setSearchVal(e.currentTarget.value)}
-      />
+    <>
       <div
         style={{
           display: "flex",
@@ -57,7 +53,7 @@ const PostSearch = () => {
       >
         {createContent()}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

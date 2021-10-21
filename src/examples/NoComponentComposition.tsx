@@ -2,6 +2,7 @@ import React from "react";
 import TaskList from "../components/TaskList";
 import localStateTasks from "../data/localStateTasks";
 import webStorageTasks from "../data/webStorageTasks";
+import { CardContent } from "../types";
 
 const NoComponentComposition = () => {
   return (
@@ -26,7 +27,13 @@ const NoComponentComposition = () => {
   );
 };
 
-const CardComponent = ({ title, content }) => {
+const CardComponent = ({
+  title,
+  content,
+}: {
+  title: string;
+  content: CardContent;
+}) => {
   return (
     <div
       style={{
@@ -45,11 +52,11 @@ const CardComponent = ({ title, content }) => {
   );
 };
 
-const CardHeader = ({ title }) => {
+const CardHeader = ({ title }: { title: string }) => {
   return <h2>{title}</h2>;
 };
 
-const CardContent = ({ text, tasks, storageKey }) => {
+const CardContent = ({ text, tasks, storageKey }: CardContent) => {
   return (
     <section>
       <p>{text}</p>

@@ -1,4 +1,6 @@
-const localStateTasks = [
+import { Task } from "../types";
+
+const localStateTasks: Task[] = [
   {
     id: 1,
     text: `Create a state using useState in the PostSearch component. Add an input element in the return and connect its 

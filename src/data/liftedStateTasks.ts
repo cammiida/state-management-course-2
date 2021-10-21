@@ -1,4 +1,6 @@
-const liftedStateTasks = [
+import { Task } from "../types";
+
+const liftedStateTasks: Task[] = [
   {
     id: 1,
     text: `In the parent component rendered below, add the search function 

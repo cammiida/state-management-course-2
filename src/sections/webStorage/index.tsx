@@ -5,7 +5,7 @@ import webStorageTasks from "../../data/webStorageTasks";
 
 const WebStorageExample = () => {
   return (
-    <React.Fragment>
+    <>
       <TaskDescription
         title="Web storage"
         sections={[
@@ -15,7 +15,7 @@ const WebStorageExample = () => {
         ]}
       />
       <TaskList tasks={webStorageTasks} storageKey="webStorageTasks" />
-    </React.Fragment>
+    </>
   );
 };
 

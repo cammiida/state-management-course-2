@@ -1,6 +1,7 @@
 import React from "react";
+import { Post } from "../../types";
 
-const PostSearchSummary = ({ posts }) => {
+const PostSearchSummary = ({ posts }: { posts: Post[] }) => {
   const usersSet = new Set();
   posts && posts.forEach((post) => usersSet.add(post.userId));
 

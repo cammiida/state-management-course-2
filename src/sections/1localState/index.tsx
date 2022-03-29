@@ -1,7 +1,7 @@
 import React from "react";
 import TaskDescription from "../../components/TaskDescription";
 import TaskList from "../../components/TaskList";
-import localStateTasks from "../../data/localStateTasks";
+import localStateTasks from "./localStateTasks";
 import PostSearch from "./PostSearch";
 
 const LocalStateExample = () => {

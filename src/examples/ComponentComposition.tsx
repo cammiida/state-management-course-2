@@ -1,7 +1,7 @@
 import React from "react";
 import TaskList from "../components/TaskList";
-import localStateTasks from "../data/localStateTasks";
-import webStorageTasks from "../data/webStorageTasks";
+import localStateTasks from "../sections/1localState/localStateTasks";
+import webStorageTasks from "../sections/3webStorage/webStorageTasks";
 
 const ComponentComposition = () => {
   return (

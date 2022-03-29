@@ -1,7 +1,7 @@
 import React from "react";
 import TaskDescription from "../../components/TaskDescription";
 import TaskList from "../../components/TaskList";
-import webStorageTasks from "../../data/webStorageTasks";
+import webStorageTasks from "./webStorageTasks";
 
 const WebStorageExample = () => {
   return (

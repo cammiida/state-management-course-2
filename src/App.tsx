@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import LiftedStateExample from "./sections/liftedState";
-import LocalStateExample from "./sections/localState";
-import WebStorageExample from "./sections/webStorage";
+import LiftedStateExample from "./sections/2liftedState";
+import LocalStateExample from "./sections/1localState";
+import WebStorageExample from "./sections/3webStorage";
 
 function App() {
   return (

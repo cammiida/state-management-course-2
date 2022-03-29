@@ -42,7 +42,7 @@ const useFetch = (url: string) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    async function init() {
+    const init = async () => {
       try {
         dispatch({ type: "reqStart" });
         const res = await fetch(BASE_URL + url);
@@ -56,7 +56,7 @@ const useFetch = (url: string) => {
       } catch (e) {
         dispatch({ type: "reqError", error: new Error("an error occurred") });
       }
-    }
+    };
     init();
   }, [url]);
 

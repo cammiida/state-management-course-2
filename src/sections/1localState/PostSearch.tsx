@@ -3,7 +3,7 @@ import useFetch from "../../hooks/useFetch";
 import { Post } from "../../types";
 
 const PostSearch = () => {
-  const [searchVal, setSearchVal] = useState();
+  const [searchVal, setSearchVal] = useState("");
 
   const {
     data: posts,

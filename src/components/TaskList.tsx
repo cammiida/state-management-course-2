@@ -1,8 +1,7 @@
 import React from "react";
-import { Task } from "../types";
 
 type TaskListState = {
-  tasks: Task[];
+  tasks: string[];
   storageKey: string;
 };
 
@@ -12,13 +11,13 @@ const TaskList = ({ tasks }: TaskListState) => {
       <h3>Tasks</h3>
       <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         {tasks.map((task) => (
-          <div key={task.id}>
+          <div key={task}>
             <input
               type="checkbox"
-              id={task.id.toString()}
-              name={task.id.toString()}
+              id={task.toString()}
+              name={task.toString()}
             />
-            <label htmlFor={task.id.toString()}>{task.text}</label>
+            <label htmlFor={task.toString()}>{task}</label>
           </div>
         ))}
       </div>

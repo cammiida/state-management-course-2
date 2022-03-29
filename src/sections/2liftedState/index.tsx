@@ -1,6 +1,6 @@
 import React from "react";
 import Parent from "./Parent";
-import liftedStateTasks from "../../data/liftedStateTasks";
+import liftedStateTasks from "./liftedStateTasks";
 import TaskList from "../../components/TaskList";
 import TaskDescription from "../../components/TaskDescription";
 

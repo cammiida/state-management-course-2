@@ -1,5 +1,6 @@
 import React from "react";
 import { Post } from "../../types";
+import styles from "./postList.module.css";
 
 const PostList = ({
   posts,
@@ -22,14 +23,7 @@ const PostList = ({
     return (
       <>
         {posts.map((post) => (
-          <div
-            style={{
-              border: "1px solid #DDD",
-              backgroundColor: "#EEE",
-              padding: "10px 20px",
-            }}
-            key={post.id}
-          >
+          <div className={styles.card} key={post.id}>
             User: {post.userId}
             <br />
             <h4>{post.title}</h4>

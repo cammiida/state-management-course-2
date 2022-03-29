@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useFetch from "../../hooks/useFetch";
 import { Post } from "../../types";
+import styles from "./styles.module.css";
 
 const PostSearch = () => {
   const [searchVal, setSearchVal] = useState("");
@@ -9,7 +10,12 @@ const PostSearch = () => {
     data: posts,
     loading,
     error,
-  } = useFetch(searchVal ? `/posts?userId=${searchVal}` : "/posts");
+  } = useFetch(!!searchVal ? `/posts?userId=${searchVal}` : "/posts");
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log("handleSearchChange: ", event);
+    setSearchVal(event.currentTarget.value);
+  };
 
   const createContent = () => {
     if (loading) return "Loading...";
@@ -22,14 +28,7 @@ const PostSearch = () => {
     }
     if (posts && posts.length) {
       return posts.map((post: Post) => (
-        <div
-          style={{
-            border: "1px solid #DDD",
-            backgroundColor: "#EEE",
-            padding: "10px 20px",
-          }}
-          key={post.id}
-        >
+        <div className={styles.card} key={post.id}>
           User: {post.userId}
           <br />
           <h4>{post.title}</h4>
@@ -42,17 +41,8 @@ const PostSearch = () => {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "5px",
-          textAlign: "left",
-          marginTop: "20px",
-        }}
-      >
-        {createContent()}
-      </div>
+      <input value={searchVal} onChange={handleSearchChange} />
+      <div className={styles.contentContainer}>{createContent()}</div>
     </>
   );
 };

@@ -1,0 +1,13 @@
+.card {
+  border: 1px solid #eee;
+  background-color: #efefef;
+  padding: 10px 20px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+  margin-top: 20px;
+}
